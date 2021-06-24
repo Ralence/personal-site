@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
 import Image from "next/image";
-import { blue } from "../styles/GlobalStyle";
+import themes from "../constants/themes";
 
 export default function Home({ setTheme }) {
   return (
@@ -19,7 +19,7 @@ export default function Home({ setTheme }) {
               <div className="browser-dot"></div>
             </div>
 
-            <ul id="navigation">
+            <ul className="navigation">
               <li>
                 <a href="#contact-form">Contact</a>
               </li>
@@ -38,19 +38,34 @@ export default function Home({ setTheme }) {
 
             <h5 style={{ textAlign: "center", lineHeight: "0" }}>Personalize Theme</h5>
 
-            <div id="theme-options-wrapper">
-              <div data-mode="light" id="light-mode" className="theme-dot"></div>
+            <div id="theme-options-wrapper" className="theme-options-wrapper">
+              <div
+                data-mode="light"
+                id="light-mode"
+                className="theme-dot light-mode"
+                onClick={() => setTheme(themes.default)}
+              ></div>
               <div
                 data-mode="blue"
                 id="blue-mode"
-                className="theme-dot"
-                onClick={() => setTheme("blue")}
+                className="theme-dot blue-mode"
+                onClick={() => setTheme(themes.blue)}
               ></div>
-              <div data-mode="green" id="green-mode" className="theme-dot"></div>
-              <div data-mode="purple" id="purple-mode" className="theme-dot"></div>
+              <div
+                data-mode="green"
+                id="green-mode"
+                className="theme-dot green-mode"
+                onClick={() => setTheme(themes.green)}
+              ></div>
+              <div
+                data-mode="purple"
+                id="purple-mode"
+                className="theme-dot purple-mode"
+                onClick={() => setTheme(themes.purple)}
+              ></div>
             </div>
 
-            <p id="settings-note">
+            <p className="settings-note">
               *Theme settings will be saved for
               <br />
               your next visit

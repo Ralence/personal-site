@@ -1,17 +1,20 @@
 import { useState } from "react";
-import { ThemeProvider } from "styled-components";
-import { blue, GlobalStyle, standard } from "../styles/GlobalStyle";
+import themes from "../constants/themes";
+import { Helmet } from "react-helmet";
+
+import "../styles/App.css";
 
 function MyApp({ Component, pageProps }) {
-  const [theme, setTheme] = useState(standard);
+  const [theme, setTheme] = useState(themes.default);
 
+  const handleSetTheme = (theme) => {
+    setTheme(theme);
+  };
+  console.log(theme);
   return (
-    <>
-      <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <Component {...pageProps} setTheme={setTheme} theme={theme} />
-      </ThemeProvider>
-    </>
+    <div className={theme}>
+      <Component {...pageProps} setTheme={handleSetTheme} theme={theme} />
+    </div>
   );
 }
 
