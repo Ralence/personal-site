@@ -401,10 +401,15 @@ h6 {
 
 .post {
   border: 1px solid var(--borderColor);
+  cursor: pointer;
 
   -webkit-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 90.75);
   -moz-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 90.75);
   box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 90.75);
+}
+
+.post:hover {
+  transform: scale(1.01);
 }
 
 .thumbnail {
@@ -470,13 +475,40 @@ h6 {
   border: none;
 }
 
+/*
+ PROJECT PAGES
+*/
+
+.project_title {
+  padding-top: 20px;
+}
+
+.project_description {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.project_cover {
+  margin: 30px;
+}
+
+.project_preview {
+  width: 80%;
+  padding-top: 0;
+  height: fit-content;
+}
+
 @media screen and (max-width: 1200px) {
   .main-container {
     width: 95%;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 870px) {
   .intro-wrapper {
     grid-template-columns: 1fr;
     grid-template-areas:

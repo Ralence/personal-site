@@ -51,7 +51,7 @@ const Contact = () => {
       <div className="main-container">
         <h3 style={{ "text-align": "center" }}>Get In Touch</h3>
 
-        <form onSubmit={handleSubmit(onSubmit)} className="contact-form">
+        <form onSubmit={handleSubmit(onSubmit)} className="contact-form" id="contact-form">
           <label>Name</label>
           <input
             className="input-field"
