@@ -14,7 +14,7 @@ function About() {
             <h4>More about me</h4>
 
             <p>
-              Curious by nature, I spend a lot my free time building small hobby projects just to
+              Curious by nature, I spend a lot of my free time building small hobby projects just to
               feel the new and unfamiliar technology in action.
             </p>
 
