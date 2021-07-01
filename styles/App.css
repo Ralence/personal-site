@@ -402,6 +402,10 @@ h6 {
 .post {
   border: 1px solid var(--borderColor);
   cursor: pointer;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
 
   -webkit-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 90.75);
   -moz-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 90.75);
@@ -500,6 +504,25 @@ h6 {
   width: 80%;
   padding-top: 0;
   height: fit-content;
+}
+
+.project_ss_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.project_ss {
+  width: 250px;
+  height: auto;
+  margin: 20px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.project_ss:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 1200px) {

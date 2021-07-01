@@ -28,7 +28,7 @@ function About() {
             <h4>TOP EXPERTISE</h4>
 
             <p>
-              Front-end developer with primary focus on React:
+              Front-end developer with primary focus on React:{" "}
               <a target="_blank" href="RankoCV.pdf">
                 Download Resume
               </a>

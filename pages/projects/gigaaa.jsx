@@ -1,6 +1,13 @@
 import React from "react";
 import ProjectInfo from "../../components/ProjectInfo";
+import ProjectImages from "../../components/ProjectImages";
 import gigaaa_4 from "../../public/gigaaa_4.png";
+import gigaaa_1 from "../../public/gigaaa_1.png";
+import gigaaa_2 from "../../public/gigaaa_2.png";
+import gigaaa_3 from "../../public/gigaaa_3.png";
+import gigaaa from "../../public/gigaaa.png";
+
+const images = [gigaaa, gigaaa_1, gigaaa_2, gigaaa_3];
 
 function Gigaaa() {
   return (
@@ -34,6 +41,7 @@ function Gigaaa() {
           </p>
         </div>
       </ProjectInfo>
+      <ProjectImages video="/gigaaa_demo.mp4" />
     </div>
   );
 }
