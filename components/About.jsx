@@ -14,13 +14,13 @@ function About() {
             <h4>More about me</h4>
 
             <p>
-              I build new projects just to tickle my brain and love teaching others how they're
-              made.
+              Curious by nature, I spend a lot my free time building small hobby projects just to
+              feel the new and unfamiliar technology in action.
             </p>
 
             <p>
-              While I keep busy teaching courses, I still take interviews in search of a great team
-              & projects that interest me.
+              While I keep busy with my daily job and family life, I still take interviews in search
+              of a great team & projects that interest me.
             </p>
 
             <hr />
