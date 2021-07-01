@@ -63,11 +63,11 @@ function Intro({ setTheme }) {
                 ></div>
               </div>
 
-              <p className="settings-note">
+              {/*<p className="settings-note">
                 *Theme settings will be saved for
                 <br />
                 your next visit
-              </p>
+              </p>*/}
             </div>
 
             <div className="right-column">
