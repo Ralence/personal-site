@@ -60,7 +60,17 @@ const Contact = () => {
     <section className="s2">
       <div className="main-container">
         <h3 style={{ "text-align": "center" }}>Get In Touch</h3>
-        <LoadingOverlay active={loading} spinner text="Sending your message...">
+        <LoadingOverlay
+          active={loading}
+          spinner
+          text="Sending your message..."
+          styles={{
+            overlay: (base) => ({
+              ...base,
+              opacity: 0.4,
+            }),
+          }}
+        >
           <form onSubmit={handleSubmit(onSubmit)} className="contact-form" id="contact-form">
             {error && (
               <p style={{ color: "#f00", margin: 0 }}>
