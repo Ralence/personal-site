@@ -33,7 +33,7 @@ function Hub() {
           </p>
         </div>
       </ProjectInfo>
-      <ProjectImages video="https://www.youtube.com/watch?v=Z3j0HX9otvw&t=35s&ab_channel=GoDaddy" />
+      <ProjectImages video="/hub_video.mp4" />
     </div>
   );
 }
