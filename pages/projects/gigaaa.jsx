@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectInfo from "../../components/ProjectInfo";
 import ProjectImages from "../../components/ProjectImages";
+import { NextSeo } from "next-seo";
 import gigaaa_4 from "../../public/gigaaa_4.png";
 import gigaaa_1 from "../../public/gigaaa_1.png";
 import gigaaa_2 from "../../public/gigaaa_2.png";
@@ -12,6 +13,10 @@ const images = [gigaaa, gigaaa_1, gigaaa_2, gigaaa_3];
 function Gigaaa() {
   return (
     <div>
+      <NextSeo
+        title="Ranko Ostojic | gigaaa project"
+        description="Ranko Ostojic is a front end web developer with extensive knowledge in creating SPAs with JavaScript, HTML and SCC especially proficient with React JS Library."
+      />
       <ProjectInfo
         title="gigaaa website Plug-in"
         image={gigaaa_4}

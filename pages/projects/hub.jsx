@@ -1,4 +1,5 @@
 import React from "react";
+import { NextSeo } from "next-seo";
 import ProjectInfo from "../../components/ProjectInfo";
 import ProjectImages from "../../components/ProjectImages";
 import hub from "../../public/hub.webp";
@@ -6,6 +7,10 @@ import hub from "../../public/hub.webp";
 function Hub() {
   return (
     <div>
+      <NextSeo
+        title="Ranko Ostojic | GoDaddy project"
+        description="Ranko Ostojic is a front end web developer with extensive knowledge in creating SPAs with JavaScript, HTML and SCC especially proficient with React JS Library."
+      />
       <ProjectInfo
         title="The Hub by GoDaddy Pro"
         image={hub}
