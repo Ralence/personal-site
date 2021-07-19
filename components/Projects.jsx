@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import comingSoon from "../public/coming_soon.png";
 import gigaaa_cover from "../public/gigaaa_4.png";
 import hub_cover from "../public/hub.webp";
 
