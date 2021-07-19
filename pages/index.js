@@ -6,7 +6,7 @@ import { NextSeo } from "next-seo";
 
 export default function Home({ setTheme }) {
   return (
-    <div>
+    <>
       <NextSeo
         title="Ranko Ostojic - web developer"
         description="Ranko Ostojic is a front end web developer with extensive knowledge in creating SPAs with JavaScript, HTML and SCC especially proficient with React JS Library."
@@ -15,6 +15,6 @@ export default function Home({ setTheme }) {
       <About />
       <Projects />
       <Contact />
-    </div>
+    </>
   );
 }

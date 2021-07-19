@@ -10,10 +10,10 @@ const Projects = () => {
   return (
     <section className="s1">
       <div className="main-container">
-        <h3 style={{ "text-align": "center" }}>Check out my latest projects</h3>
+        <h3 style={{ textAlign: "center" }}>Check out my latest projects</h3>
 
         <div className="post-wrapper">
-          <Link href="projects/hub" passHref>
+          <Link href="/projects/hub" passHref>
             <a>
               <div>
                 <div className="post">
@@ -33,7 +33,7 @@ const Projects = () => {
                     </p>
                   </div>
                   <div style={{ margin: "15px", marginTop: "auto" }}>
-                    <a>Read more</a>
+                    <span>Read more</span>
                   </div>
                 </div>
               </div>
@@ -59,7 +59,7 @@ const Projects = () => {
                     </p>
                   </div>
                   <div style={{ margin: "15px", marginTop: "auto" }}>
-                    <a>Read more</a>
+                    <span>Read more</span>
                   </div>
                 </div>
               </div>

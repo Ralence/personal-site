@@ -6,7 +6,7 @@ const ProjectImages = ({ images, video }) => {
   return (
     <section className="s1 project_images">
       <div className="main-container">
-        <h4 style={{ "text-align": "center" }}>Project video</h4>
+        <h4 style={{ textAlign: "center" }}>Project video</h4>
         <div style={{ margin: "auto", marginBottom: "25px", width: "340px" }}>
           <span>
             * please note that the current state of the project might be different from what is
@@ -25,7 +25,7 @@ const ProjectImages = ({ images, video }) => {
           <ReactPlayer url={video} controls width="80%" />
         </div>
 
-        {images && <h4 style={{ "text-align": "center" }}>Project screenshots</h4>}
+        {images && <h4 style={{ textAlign: "center" }}>Project screenshots</h4>}
         <div className="post_wrapper project_ss_wrapper">
           {images?.map((image, i) => (
             <div key={i} className="post project_ss">
