@@ -29,8 +29,7 @@ const renderHTML = (message) => {
 };
 
 var transporter = nodemailer.createTransport({
-  service: "gmail",
-  port: 587,
+  service: "yahoo",
   secure: false,
   auth: {
     user: process.env.EMAIL_ADDRESS,
